@@ -69,4 +69,41 @@ function printBookDetails(book: Book): void {
 }
 
 
+function getUniqueValues(
+  array1: (number | string)[],
+  array2: (number | string)[]
+): (number | string)[] {
+  const result: (number | string)[] = [];
+
+  // Add all elements from first array
+  for (let i = 0; i < array1.length; i++) {
+    let exists = false;
+    for (let j = 0; j < result.length; j++) {
+      if (array1[i] === result[j]) {
+        exists = true;
+        break;
+      }
+    }
+    if (!exists) {
+      result.push(array1[i]);
+    }
+  }
+
+  // Add elements from second array if not already in result
+  for (let i = 0; i < array2.length; i++) {
+    let exists = false;
+    for (let j = 0; j < result.length; j++) {
+      if (array2[i] === result[j]) {
+        exists = true;
+        break;
+      }
+    }
+    if (!exists) {
+      result.push(array2[i]);
+    }
+  }
+
+  return result;
+}
+
 
