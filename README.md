@@ -133,3 +133,5 @@ console.log(hasProperty(user, "age"));  // true
 ```
 
 `keyof` ব্যবহার করে আমরা type-safe property access এবং dynamic object manipulation করতে পারি, যা runtime error প্রতিরোধ করে।
+
+## End!
