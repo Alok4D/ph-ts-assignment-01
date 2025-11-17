@@ -1,5 +1,3 @@
-// Problem : 01
-
 function formatValue(
   value: string | number | boolean
 ): string | number | boolean {
@@ -12,6 +10,14 @@ function formatValue(
   }
 }
 
-console.log(formatValue("hello")); // HELLO
-console.log(formatValue(5)); // 50
-console.log(formatValue(true)); // false
+
+function getLength(value: string | any[]): number {
+  if (typeof value === "string") {
+    return value.length;
+  } else if (Array.isArray(value)) {
+    return value.length;
+  }
+  return 0;
+}
+
+
