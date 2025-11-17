@@ -381,4 +381,35 @@ function handleResponse(response: ApiResponse<any>) {
 - **Union (|)**: যেকোনো একটি type হতে পারে
 - **Intersection (&)**: সব type-এর properties একসাথে থাকতে হবে
 
-## End!
+---
+
+## 📚 আরও প্রশ্ন ও উত্তর
+
+> **বিস্তারিত TypeScript Interview Questions এবং সমাধান দেখতে নিচের লিংকে ক্লিক করুন:**
+
+### 🔗 [Complete TypeScript Interview Guide](https://drive.google.com/file/d/1MiBqIeHl41djWwNsnx2GLIEF_U8RMNi6/view?usp=sharing)
+
+**এই গাইডে যা পাবেন:**
+- ✅ Advanced TypeScript Concepts
+- ✅ Real-world Examples
+- ✅ Best Practices
+- ✅ Common Interview Questions
+- ✅ Detailed Solutions
+
+---
+
+### 📝 সংক্ষিপ্ত সারাংশ
+
+এই README-তে আমরা TypeScript-এর মূল বিষয়গুলো নিয়ে আলোচনা করেছি:
+
+1. **Interface vs Type** - কখন কোনটি ব্যবহার করবেন
+2. **keyof Operator** - Type-safe property access
+3. **any, unknown, never** - বিশেষ টাইপগুলোর পার্থক্য
+4. **Enums** - Named constants এর ব্যবহার
+5. **Union & Intersection** - Complex type relationships
+
+> 💡 **টিপ:** TypeScript শেখার জন্য প্রতিদিন অনুশীলন করুন এবং real-world projects এ apply করুন।
+
+---
+
+**Happy Coding! 🚀**
