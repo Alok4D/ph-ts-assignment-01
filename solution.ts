@@ -10,7 +10,6 @@ function formatValue(
   }
 }
 
-
 function getLength(value: string | any[]): number {
   if (typeof value === "string") {
     return value.length;
@@ -19,7 +18,6 @@ function getLength(value: string | any[]): number {
   }
   return 0;
 }
-
 
 class Person {
   name: string;
@@ -41,18 +39,11 @@ function filterByRating(
   return items.filter((item) => item.rating >= 4);
 }
 
-const books = [
-  { title: "Book A", rating: 4.5 },
-  { title: "Book B", rating: 3.2 },
-  { title: "Book C", rating: 5.0 },
-];
-
 function filterActiveUsers(
   users: { id: number; name: string; email: string; isActive: boolean }[]
 ): { id: number; name: string; email: string; isActive: boolean }[] {
   return users.filter((user) => user.isActive === true);
 }
-
 
 interface Book {
   title: string;
@@ -67,7 +58,6 @@ function printBookDetails(book: Book): void {
     `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`
   );
 }
-
 
 function getUniqueValues(
   array1: (number | string)[],
@@ -124,5 +114,3 @@ function calculateTotalPrice(products: Product[]): number {
     })
     .reduce((sum, value) => sum + value, 0);
 }
-
-
